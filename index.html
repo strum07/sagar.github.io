@@ -1,26 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <link href="node_modules/hover.css/css/hover.css" rel="stylesheet" media="all">
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/css/materialize.min.css"  media="screen,projection"/>
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <meta charset="UTF-8">
-    <title>Hello, World!</title>
+    <title>Sagar Sudhakar - Landing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 </head>
-<body>
+<body class="loading">
+<div id="wrapper">
+    <div id="bg"></div>
+    <div id="overlay"></div>
+    <div id="main">
 
-<h1 class="hvr-bob">Hello, World!!</h1>
-<button class="hvr grow">Test</button>
-<a href="#" class="button hvr-float">Checkout</a>
+        <!-- Header -->
+        <header id="header">
+            <h1>< Sagar Sudhakar ></h1>
+            <p>Full Stack Web Developer &nbsp;&bull;&nbsp; Hacker &nbsp;&bull;&nbsp; Dreamer</p>
+            <nav>
+                <ul>
+                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+                    <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <!-- Footer -->
+        <footer id="footer">
+            <span class="copyright">&copy; Sagar Sudhakar 2017</span>
+        </footer>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="node_modules/materialize-css/css/materialize.min.css"></script>
+    </div>
+</div>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script>
+    window.onload = function() { document.body.className = ''; }
+    window.ontouchmove = function() { return false; }
+    window.onorientationchange = function() { document.body.scrollTop = 0; }
+</script>
 </body>
 </html>
